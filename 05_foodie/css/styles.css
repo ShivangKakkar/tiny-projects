@@ -1,8 +1,337 @@
-:root {
-  --color-primary: #E8491D;
-  --color-background: #35424A;
-}
-
 html {
   font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.underline--bold {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.underline--primary {
+  border-bottom: 1px solid #ff3333;
+  padding: 1rem 0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+}
+
+.hero {
+  background: url('../images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  background-position: center top;
+  color: #fff;
+}
+
+.hero__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__heading {
+  margin: 3rem 0;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.hero__content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.hero__footer {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+  background: transparent;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  outline: 0;
+  padding: 1.5rem 4rem;
+  cursor: pointer;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 4rem;
+  max-width: 80vw;
+}
+
+.feature img {
+  height: 108px;
+  width: 108px;
+}
+
+.feature h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.feature p {
+  font-size: 1.6rem;
+  /* margin: 1rem 4rem; */
+}
+
+.app {
+  background: #f7f7f7;
+  display: flex;
+}
+
+.app img {
+  display: none;
+  width: 40rem;
+}
+
+.app__content  {
+  margin: 5rem;
+}
+
+.app__content h2 {
+  font-size: 1.8rem;
+
+}
+
+.app__content p {
+  font-size: 1.6rem;
+}
+
+.testimonials {
+  background: url('../images/reviews-bg.jpg');
+  height: 30rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.testimonial {
+  margin: 2rem;
+  text-align: center;
+}
+
+.quote {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.quote::before {
+  content: open-quote;
+}
+
+.quote::after {
+  content: close-quote;
+}
+
+.author {
+  font-size: 1.4rem;
+}
+
+.author::before {
+  content: '- ';
+}
+
+.cuisines_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cuisines {
+  width: 100%;
+  color: #fff;
+}
+
+.cuisines_block h2 {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.cuisine {
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuisine h3 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+.cuisine p {
+  font-size: 1.6rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.italian {
+  background: url('../images/italian.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.indian {
+  background: url('../images/indian.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.french {
+  background: url('../images/french.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.steak {
+  background: url('../images/steak.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.seafood {
+  background: url('../images/seafood.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sushi {
+  background: url('../images/sushi.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mexican {
+  background: url('../images/mexican.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.chinese {
+  background: url('../images/chinese.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pizza {
+  background: url('../images/pizza.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.american {
+  background: url('../images/american.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.stats {
+  background: #4a3949;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.stat {
+  text-align: center;
+  padding: 1.6rem;
+}
+
+.stat h3{
+  font-size: 3.6rem;
+  margin: 0;
+}
+
+.stat p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.footer {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 100vh;
+  } 
+
+  .hero__heading {
+    font-size: 7.5rem;
+  }
+
+  .hero__header {
+    margin: 0 7.2rem;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 90rem;
+    margin: 5rem auto;
+  }
+
+  .cuisines, .stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 7.2rem;
+  }
+
+  .footer p {
+    display: inline-block;
+  }
+
+  .app img {
+    display: initial;
+  }  
+
 }
