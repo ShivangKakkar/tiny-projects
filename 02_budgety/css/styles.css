@@ -11,7 +11,7 @@ html {
 
 .budget {
   height: 40vh;
-  background: url('images/back.png');
+  background: url('../images/back.png');
   background-size: cover;
   text-align: center;
   color: #fff;
