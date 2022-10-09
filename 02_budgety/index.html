@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budgety</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="budget">
+      <p>Available Buget in <span id="date"></span>:</p>
+      <h1 class="budget__total">+ 0.00</h1>
+      <div class="budget__values">
+        <div class="budget__value budget__income">
+          <span class="text">Income</span>
+          <span class="amount">0.00</span>
+        </div>
+        <div class="budget__value budget__expenses">
+          <span class="text">Expenses</span>
+          <span class="amount">0.00</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="budget_data">
+      <form class="budget_data__content">
+        <select id="drop_down">
+          <option value="+">+</option>
+          <option value="-">-</option>
+        </select>
+        <input id="text" type="text" placeholder="Add description" />
+        <input id="amount" type="number" placeholder="Value" />
+      </form>
+    </section>
+
+    <section class="items">
+      <div class="item income">
+        <h2>Income</h2>
+        <ul class="list income__list">
+          <!-- <li>
+            <span class="text">Salary</span>
+            <span class="amount">500.00</span>
+          </li>
+          <li>
+            <span class="text">Rent Collect</span>
+            <span class="amount">300.00</span>
+          </li> -->
+        </ul>
+      </div>
+      <div class="item expenses">
+        <h2>Expenses</h2>
+        <ul class="list expenses__list">
+          <!-- <li>
+            <span class="text">Car</span>
+            <span class="amount">300.00</span>
+          </li>
+          <li>
+            <span class="text">Food</span>
+            <span class="amount">100.00</span>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

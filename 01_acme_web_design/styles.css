@@ -1,0 +1,174 @@
+:root {
+  --color-primary: #E8491D;
+  --color-background: #35424A;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  color: #fff;
+  background: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.5rem;
+  margin: auto;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: auto;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list__item {
+  display: inline;
+  font-size: 2.2rem;
+  padding: 0.5rem;
+}
+
+.list__item:hover {
+  color: var(--color-primary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.hero {
+  color: #fff;
+  width: 100%;
+  height: 40rem;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__content {
+  text-align: center;
+  width: 80%;
+}
+
+.hero__content p {
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+
+.newsletter {
+  color: #fff;
+  background: var(--color-background);
+  padding: 5% 10%;
+}
+
+.newsletter__content {
+  /* display: flex; */
+  /* flex-direction: column; */
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.newsletter p {
+  text-transform: capitalize;
+  width: 100%;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 0.7rem 0;
+  border: 0;
+  outline: 0;
+  margin: 2rem 0 1rem 0;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: 0;
+  padding: 0.7rem 0;
+}
+
+.box {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 6rem 0;
+}
+
+.box img {
+  width: 9rem;
+  height: 9rem;
+  padding: 0 0 3rem 0;
+}
+
+.footer {
+  background: var(--color-primary);
+  height: auto;
+  color: #fff;
+  padding: 1.6rem 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }  
+
+  h2 {
+    font-size: 6rem;
+  }
+
+  .newsletter__content p {
+    font-size: 2.5rem;
+  }
+
+  .newsletter input {
+    width: 40%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    width: auto;
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+  }
+
+  .boxes {
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
+}

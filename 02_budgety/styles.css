@@ -1,0 +1,199 @@
+:root {
+  --color-primary: #28B9B5;
+  --color-secondary: #FF5049;
+  --color-text: #444;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.budget {
+  height: 40vh;
+  background: url('images/back.png');
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.budget_data {
+  min-height: 10vh;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 50vh;
+}
+
+.item {
+  padding: 5vh 5vw;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  color: #555;
+}
+
+.list li {
+  font-size: 1.6rem;
+  width: 100%;
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.list li:first-of-type {
+  border-top: 1px solid #e7e7e7;
+}
+
+.list li:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.list li:hover .amount{
+  padding-right: 1rem;
+}
+
+.amount {
+  transition: padding 0.2s;
+}
+
+.income .amount {
+  color: var(--color-primary);  
+}
+
+.expenses .amount {
+  color: var(--color-secondary);
+}
+
+.amount::before {
+  margin-right: 0.5rem;
+}
+
+.income .amount::before {
+  content: '+';
+}
+
+.expenses .amount::before {
+  content: '-';
+}
+
+.income h2 {
+  color: var(--color-primary);  
+}
+
+.expenses h2 {
+  color: var(--color-secondary);
+}
+
+.budget p {
+  margin: 0;
+  padding: 2rem 0 0;
+  font-size: 1.8rem;
+}
+
+.budget h1 {
+  font-size: 4.6rem;
+  font-weight: inherit;
+  margin: 2rem 0;
+}
+
+.budget__values {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 300px;
+  width: 70vw;
+  row-gap: 1rem;
+  /* height: 10vh; */
+}
+
+.budget__value {
+  padding: 1.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.budget__income {
+  background-color: var(--color-primary);
+}
+
+.budget__expenses {
+  background-color: var(--color-secondary);
+}
+
+.budget__value .text {
+  color: #444;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.budget__value .amount {
+  font-size: 1.6rem;
+}
+
+.budget__value .amount::before {
+  padding-right: 0,5rem;
+}
+
+.budget__income .amount::before {
+  content: '+';
+}
+
+.budget__expenses .amount::before {
+  content: '-';
+}
+
+.budget_data {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10% auto; */
+}
+
+input, select {
+  outline: 0;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  display: inline-block;
+  padding: 1.3rem;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+input {
+  border-radius: 0.5rem;
+}
+
+input[type='text'] {
+  width: 40rem;
+}
+
+input[type='number'] {
+  width: 10rem;
+}
+
+input:focus, select:focus {
+  border-color: var(--color-primary);
+}
+
+select {
+  display: inline-block;
+  padding-left: 0.5rem;
+}

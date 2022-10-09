@@ -1,0 +1,22 @@
+{
+  "income": [
+    {
+      "text": "Salary",
+      "amount": 500
+    },
+    {
+      "text": "Rent Collect",
+      "amount": 300
+    }
+  ],
+  "expenses": [
+    {
+      "text": "Car",
+      "amount": 300
+    },
+    {
+      "text": "Food",
+      "amount": 100
+    }
+  ]
+}

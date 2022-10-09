@@ -1,0 +1,118 @@
+:root {
+  --color-primary: #EB4D4D;
+  --color-background: #D49159;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.pig {
+  background: #fff;
+  height: 90vh;
+  width: 85vw;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.player-1 {
+  background-color: #f7f7f7;
+}
+
+.player-heading {
+  font-size: 4rem;
+}
+
+.total-score {
+  font-size: 8rem;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 10rem;
+  color: var(--color-primary);
+}
+
+.current {
+  background: var(--color-primary);
+  padding: 0 3rem;
+}
+
+.current-heading {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.current-score {
+  font-size: 3rem;
+  color: #fff;
+  margin: 1rem;
+}
+
+.bullet {
+  color: var(--color-primary);
+  padding-left: 1rem;
+}
+
+.bullet::before {
+  content: '\2022';
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.btn:hover {
+  color: #000;
+}
+
+.dice {
+  height: 10rem;
+  position: absolute;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  top: 30vh;
+  left: 38vw;
+}
+
+.btn-new {
+  position: absolute;
+  top: 5vh;
+  left: 37vw;
+}
+
+.btn-roll {
+  position: absolute;
+  bottom: 25vh;
+  left: 37.5vw;
+}
+
+.btn-hold {
+  position: absolute;
+  bottom: 15vh;
+  left: 39.5vw;
+}
