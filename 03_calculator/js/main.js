@@ -16,7 +16,7 @@ buttons.forEach((btn) => {
     } else {
       let con = btn.innerHTML
       if (con === 'X') con = '*'
-      if (con === '+') con = '/'
+      if (con === '÷') con = '/'
       expBlock.innerHTML = exp + con
     }
 
